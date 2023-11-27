@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(6, 170, 107, 0.548);
+    /* color: rgb(177, 177, 177); */
+    color: antiquewhite;
+    text-align: left;
+    text-shadow: 4px 4px 8px blue;
+
+}
+.container{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    height: 80px;
+}
+.logo{
+    align-items: center;
+    margin: 5px 2px;
+}
+.logo img{
+    width: 126px;
+    height: 40px;
+    border-radius: 10px;
+}
+ul{
+    list-style-type: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+li{
+    color: antiquewhite;
+    text-align: left;
+    /* text-decoration: overline;  */
+    text-shadow: 4px 4px 8px blue;
+    margin-left: 30px;
+    padding: 5px;
+    font-size: 21px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.menu li a:hover{
+    border: 2px solid rgb(21, 34, 68) ;
+    border-radius: 5px;
+    background-color: #0a412c;
+}
+a{
+    text-decoration: none;
+}
+.img{
+    width: 100%;
+    height: 560px;
+    background-image: url(./files/4046565.jpg);
+    background-position: center;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+
+}
+.img img{
+    margin-top: 40px;
+    margin-left: 40%;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.explanation{
+    background: fixed;
+    background-color: transparent;
+    margin-left: 30%;
+    font-size: 20px;
+    width: 40%;
+    border-radius: 20px;
+    padding: 10px;
+}
+li.logo:hover{
+    border: none;
+}
+h1{
+    margin-bottom: 10px;
+}
+.menuc{
+    display: inline-block;
+}
+.content{
+    display: inline-block;
+    width: 60%;
+    height: 50%;
+}
+.content textarea{
+    display: inline-block;
+    width: 60%;
+    padding: 7px;
+    height: 50%;
+    border: 2px solid rgb(21, 34, 68);
+    margin-top: 20px;
+    border-radius: 20px;
+}.fund{
+    height: 570px;
+    background-image: url(./files/6256878.jpg);
+}
+/* .fundamentalsmenuleft li{
+    width: 20%;
+} */
+.fundamentalsmenuleft li a:hover{
+    background-color: #0a412c;
+}
+
+.fundamentalsmenuleft li{
+    display: flex;
+    margin: 20px;
+    
+    border-radius: 20px;
+    align-items: center;
+    background: transparent;
+    /* justify-content: center; */
+}
+.menuleft ,.technicalsmenuleft li{
+    display: flex;
+    margin: 20px;
+    width: 17%;
+}
+.menuleft,.technicalsmenuleft, li:hover{
+    border: 2px solid rgb(21, 34, 68);
+    border-radius: 5px;
+}
+#SMA{
+    display: inline-block;
+    width: 60%;
+    /* height: 70px; */
+    /* border-top: 2px solid rgb(21, 34, 68); */
+    border-radius: 10px;
+    margin: 30px;
+}
+#SMA td{
+    border-bottom: 2px solid rgb(21, 34, 68);
+    border-left: 2px solid rgb(21, 34, 68);
+    align-items: center;
+    padding: 10px;
+}
+.sentimentbody{
+    display: flex;
+}
+.menuleft{
+    border: none;
+}
+.instrument {
+    background-image: url(./files/4046565.jpg);
+    /* margin: 30px; */
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+}
+
+.quotation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.instrument input {
+    width: 50px;
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+}
+
+.quotation table {
+    background-color: transparent;
+    width: 70%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.keyareas h2,.keyareas input{
+    background-color: transparent;
+}
+.keyareas input{
+    font-size: 20px;
+}
+.quotation table thead td {
+    padding: 10px;
+    background-color: #0a7049;
+    color: white;
+}
+
+.quotation table td {
+    height: 50px;
+    padding: 10px;
+    border-bottom: 2px solid green;
+    text-align: center;
+    background-color: transparent;
+}
+
+.quotation table td:hover {
+    background-color: rgb(33, 77, 77);
+}
+
+.quotation h1 {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 10px;
+}
+.quotation p{
+    padding: 5px;
+    border-radius: 10px;
+}
+.keyareas {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.keyareas h2 {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.keyareas h2:hover{
+    text-decoration: underline;
+}
+
+.keyareas input {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 85%;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: rgb(36, 114, 75);
+    /* color: white; */
+    text-align: center;
+    padding: 5px;
+}
+.contact {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-image: url(./files/6256878.jpg);
+    padding: 50px;
+    font-size: 25px;
+    
+  }
+  
+  .contactme,
+  .socialmedia {
+    width: 30%;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 12px;
+  }
+  
+  .contactme p,
+  .socialmedia p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    
+  }
+  .contactme p a,.socialmedia p a{
+    background-color: transparent;
+  }
+  .contactme input,
+  .socialmedia input {
+    margin-left: 10px;
+    /* background-color: #94ac95; */
+   
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .contactme input:hover,
+  .socialmedia input:hover {
+    background-color: transparent;
+  }
+  
+  /* .fa {
+    margin: 5px;
+    font-size: 15px; 
+    color: black;
+  }
+   */
+   .contactme p{
+    padding: 10px; border-radius: 10px; background-color: transparent;
+   }
+
+   .socialmedia p input ,.socialmedia p{ padding: 10px; border-radius: 10px; background-color: transparent;
+   }

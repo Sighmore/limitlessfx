@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limitless Fx</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li> 
+                        <div class="logo"><a href="index.html">
+                            <img src="./files/logo.png"></a>
+                        </div></li>
+                    <li><a href="fundamentals.html">FUNDAMENTALS</a></li>
+                    <li><a href="sentiment.html">SENTIMENT</a></li>
+                    <li><a href="technicals.html">TECHNICALS</a></li>
+                    <li><a href="chart.html">CHART</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="founder.html">ABOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+       <hr>
+       <div class="fund">
+        <div class="menuc" style="background-color: transparent;">
+            <div class="fundamentalsmenu" style="background-color: transparent; border-radius: 20px;">
+                <ul class="fundamentalsmenuleft" style="background-color: transparent;">
+                    <li><a href="" style="padding: 10px; border-radius: 10px; background-color: transparent;"  onclick="loadForexFactoryPage()" >Expected Calender</a></li>
+                    <li><a href="" style="padding: 10px; border-radius: 10px; background-color: transparent;">Economic Impact</a></li>
+                    <li><a href="" style="padding: 10px; border-radius: 10px; background-color: transparent;">Geopolitics</a></li>
+                </ul>
+               </div>
+               
+           </div>
+           <div class="content" style="background-color: transparent; margin-left: 50px;">
+            <textarea name="" id="" cols="110" rows="10" readonly style="padding: 10px;">content here</textarea>
+           </div>
+       </div>
+    </div>
+    <script>
+        function loadForexFactoryContent() {
+            // Using XMLHttpRequest (AJAX) to fetch content from the Forex Factory page
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    // Update the textarea with the fetched content
+                    document.getElementById('forexFactoryContent').value = xhr.responseText;
+                }
+            };
+            // Change the URL to the Forex Factory high impact releases page
+            xhr.open('GET', 'https://www.forexfactory.com/calendar.php?day=today', true);
+            xhr.send();
+        }
+    </script>
+</body>
+</html>
