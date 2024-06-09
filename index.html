@@ -25,7 +25,6 @@
                 </ul>
             </div>
         </nav>
-       <hr>
        <div class="instrument">
         <div class="quotation" id="quotation" style="margin-right: 10%;">
             <h1 style="background-color: transparent; font-size: 60px;">XAUUSD</h1>
@@ -88,28 +87,32 @@
     <hr>
     <footer style="height: 20%;  align-items: center; justify-content: center;">
         <div class="contactdetails" style="height: auto; background-color: transparent; align-items: center; justify-content: center;">
-            <p style="padding: 10px; margin-top: 2px; background-color: transparent;">@Limitless designs. Tel no:</p>
+            <p style="padding: 10px; margin-top: 2px; background-color: transparent;">@INOXOFT designs. Tel no:</p>
         </div>
     </footer>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            function fetchGoldPrices() {
-                const oandaEndpoint = 'https://www1.oanda.com/rates/api/v2/rates/spot.json?api_key=YOUR_OANDA_API_KEY&base=XAU&quote=USD';
+    const axios = require('axios');
+    const apiKey = 'goldapi-1gnd90slx74yvps-io';
 
-                fetch(oandaEndpoint)
-                    .then(response => response.json())
-                    .then(data => {
-                        const askPrice = data.ask[0].fxRate || 'N/A';
-                        const bidPrice = data.bid[0].fxRate || 'N/A';
-
-                        document.getElementById('ask').value = askPrice;
-                        document.getElementById('bid').value = bidPrice;
-                    })
-                    .catch(error => console.error('Error fetching gold prices:', error));
+    function fetchGoldPrices() {
+        axios.get('https://www.goldapi.io/api/XAU/USD', {
+            headers: {
+                'x-access-token': apiKey
             }
+        })
+        .then(response => {
+            const askPrice = response.data.ask[0].fxRate || 'N/A';
+            const bidPrice = response.data.bid[0].fxRate || 'N/A';
 
-            fetchGoldPrices(); // Fetch prices on page load
-        });
+            document.getElementById('ask').value = askPrice;
+            document.getElementById('bid').value = bidPrice;
+        })
+        .catch(error => console.error('Error fetching gold prices:', error));
+    }
+
+    fetchGoldPrices(); // Fetch prices on page load
+});
     </script>
 </body>
 </html>
