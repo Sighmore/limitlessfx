@@ -22,7 +22,8 @@ Limitless FX is a comprehensive web application designed for trading XAU/USD (Go
 - **Market Sentiment:** Gauge market sentiment with sentiment analysis tools.
 - **Social Media Monitoring:** Track social media trends and sentiments related to XAU/USD.
 
-## Getting Started
+![limitless fx](https://github.com/user-attachments/assets/5c57e058-52d9-416e-b60b-a897e9de0bf8)
+
 
 ### Prerequisites
 
