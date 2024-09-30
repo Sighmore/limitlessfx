@@ -14,7 +14,7 @@ Limitless FX is a comprehensive web application designed for trading XAU/USD (Go
 
 ### 2. Fundamental Analysis
 
-- **Economic Indicators:** Stay informed about relevant economic indicators affecting XAU/USD.
+- **Economic Indicators:** Stay informed about relevant economic indicators affecting XAU/USD from the forex factory.
 - **News Feed:** Real-time news updates related to the gold market and economic events.
 
 ### 3. Sentiment Analysis
